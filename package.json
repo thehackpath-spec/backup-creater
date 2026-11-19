@@ -1,0 +1,9 @@
+{
+  "name": "summer-donations-stats-backup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply summer-donations-stats --remote"
+  }
+}

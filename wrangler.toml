@@ -1,0 +1,16 @@
+name = "summer-donations-stats-backup"
+main = "src/index.js"
+compatibility_date = "2026-11-11"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "summer-donations-stats"
+database_id = "59b8eba7-c418-449e-a779-9a8d6fcae91d"
+migrations_dir = "migrations"
+
+[secrets]
+required = ["BACKUP_TOKEN"]
